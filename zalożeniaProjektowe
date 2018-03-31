@@ -1,0 +1,7 @@
+1. Założenia projektowe  
+ aplikacja typu klient-serwer  
+ rejestracja nowego użytkownika (WYMAGANE: imię ,numer telefonu, adres email, password ) 
+ użytkownik będzie miał możliwość wysyłania wiadomości tekstowych po uprzednim wybraniu rodzaju wiadomości  
+ w przypadku wybrania wiadomości SMS nadawca musi wpisać numer odbiorcy , analogicznie w przypadku wybrania opcji EMIAL 
+ użytkownik aplikacji posiada możliwość przeglądania historii wysyłanych wiadomości (które będą mogły być wyszukiwane oraz sortowane) 
+ z poziomu administratora istnieje możliwość usuwania historii wysyłanych wiadomości danego użytkownika 
