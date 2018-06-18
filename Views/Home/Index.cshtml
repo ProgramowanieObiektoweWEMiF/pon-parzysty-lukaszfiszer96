@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <title>MainPage</title>
+
+</head>
+<body>
+    <div id="contentHomeIndex">
+        <div class="square">
+            Messenex super appka dzięki której możesz wysyłać wiadomości jak gość.
+        </div>
+        <div class="square">
+            <div class="rectangle1">
+                @Html.ActionLink("Sing up", "CreateUser")
+            </div>
+            <div class="rectangle2">
+                @Html.ActionLink("Sing in", "Login")
+            </div>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,36 @@
+﻿@model PO_Messenger.Models.Users
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>UserAdded</title>
+
+</head>
+<body>
+    <div id="contentHomeIndex">
+        @using (Html.BeginForm())
+        {
+        @Html.AntiForgeryToken()
+        <div>
+            <h3> Enter your email and password </h3>
+            @Html.LabelFor(model => model.EmialAdress, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.EditorFor(model => model.EmialAdress, new { htmlAttributes = new { @class = "form-control" } })
+
+            @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.PasswordFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+            <input type="submit" value="Login" class="btn btn-default" />
+            <input type="reset" value="Reset" class="btn btn-default " />
+
+        </div>
+         }
+    </div>
+    </body>
+</html>

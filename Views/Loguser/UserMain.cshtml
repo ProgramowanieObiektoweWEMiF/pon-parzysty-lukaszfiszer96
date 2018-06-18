@@ -1,0 +1,15 @@
+﻿@model PO_Messenger.Models.Users
+
+@{
+    ViewBag.Title = "UserMain";
+}
+
+<h2>UserMain</h2>
+<p>
+    Welcome @Session["userName"]
+    @Session["userObj"]
+</p>
+@Html.ActionLink("Send email", "SendEmail")
+@Html.ActionLink("Send SMS", "SendMessage")
+@Html.ActionLink("Check history", "CheckHistory")
+

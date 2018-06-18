@@ -1,0 +1,27 @@
+﻿@model PO_Messenger.Models.Email
+
+@{
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SendEmail</title>
+</head>
+<body>
+    <div> 
+        @using (Html.BeginForm())
+        {
+            <p> Recpient name: @Html.TextBoxFor(x => x.Recipient) </p>
+            <p> Recipient Email: @Html.TextBoxFor(x => x.RecipientEmial) </p>
+            <p> Topic: @Html.TextBoxFor(x => x.Topic) </p>
+            <p> Contents: @Html.TextBoxFor(x => x.Contents) </p>
+            <input type="submit" value="Wyslij emial" />
+
+        }
+    </div>
+</body>
+</html>
